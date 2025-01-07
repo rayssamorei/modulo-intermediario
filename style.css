@@ -125,6 +125,87 @@ section {
     flex-wrap: wrap;
 }
 
+#importancia .conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+#importancia img {
+    width: 40%;
+    border-radius: 15px;
+}
+
+.beneficios,
+.dicas {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios h3,
+.dicas h3 {
+    color: #27ae60;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.beneficios ul,
+.dicas ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.beneficios ul li,
+.dicas ul li {
+    margin: 0.5em 0;
+}
+
+.imc-info {
+    text-align: left;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imc-info h3 {
+    color: #27ae60;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.imc-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.imc-info h4 {
+    color: #27ae60;
+    font-size: 1.2rem;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.imc-info ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.imc-info ul li {
+    margin: 0.5em 0;
+}
+
+
 .card {
     background: white;
     border-radius: 10px;

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alimentação Saudável</title>
-    <meta name="description" content="Dicas de alimentação saudável, calculadora de IMC e mais. Transforme sua vida com bons hábitos alimentares!">
+    <meta name="description"
+        content="Dicas de alimentação saudável, calculadora de IMC e mais. Transforme sua vida com bons hábitos alimentares!">
     <meta name="keywords" content="alimentação saudável, saúde, dicas, IMC, vida saudável">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
+
 <body>
     <!-- Navegação -->
     <nav class="navbar">
@@ -36,12 +39,37 @@
         <div class="conteudo">
             <img src="img/saudavel.png" alt="Comida Saudável">
             <p>
-                Uma alimentação equilibrada não é apenas uma escolha, é um estilo de vida. 
-                Incorporar alimentos ricos em nutrientes ajuda a prevenir doenças, melhora a qualidade de vida 
-                e proporciona energia para encarar o dia com disposição. Invista na sua saúde hoje!
+                Uma alimentação equilibrada não é apenas uma escolha, é um estilo de vida. <br>
+                Incorporar alimentos ricos em nutrientes ajuda a prevenir doenças, <br>melhora a qualidade de vida
+                e proporciona energia para encarar o dia com disposição. <br> Invista na sua saúde hoje!
             </p>
         </div>
     </section>
+
+    <section id="importancia" class="fade-in">
+        <div class="beneficios">
+            <h3>Benefícios de uma Alimentação Saudável</h3>
+            <ul>
+                <li>Fortalece o sistema imunológico</li>
+                <li>Melhora a digestão e o funcionamento do intestino</li>
+                <li>Aumenta a disposição e energia</li>
+                <li>Prevenção de doenças como diabetes e hipertensão</li>
+                <li>Ajuda a manter o peso adequado</li>
+            </ul>
+        </div>
+        <div class="dicas">
+            <h3>Dicas para Manter uma Alimentação Saudável</h3>
+            <p>Adotar uma alimentação saudável não precisa ser difícil. Aqui estão algumas dicas práticas:</p>
+            <ul>
+                <li>Inclua alimentos variados e frescos no seu prato.</li>
+                <li>Evite alimentos processados e ricos em gorduras saturadas.</li>
+                <li>Prefira alimentos integrais e ricos em fibras.</li>
+                <li>Coma pequenas porções ao longo do dia, priorizando o equilíbrio.</li>
+                <li>Mantenha-se hidratado, bebendo pelo menos 2 litros de água por dia.</li>
+            </ul>
+        </div>
+    </section>
+
 
     <!-- Seção de dicas -->
     <section id="dicas" class="fade-in">
@@ -81,11 +109,29 @@
             <button type="button" onclick="calcularIMC()">Calcular</button>
         </form>
         <p id="resultado"></p>
+
+        <!-- Explicação sobre o IMC -->
+        <div class="imc-info">
+            <h3>O que é o IMC?</h3>
+            <p>
+                O Índice de Massa Corporal (IMC) é uma ferramenta usada para avaliar se o peso de uma pessoa está
+                adequado em relação à sua altura.
+                Ele é calculado dividindo o peso (em kg) pelo quadrado da altura (em metros). O resultado ajuda a
+                classificar a pessoa em diferentes faixas de peso.
+            </p>
+            <h4>Como Interpretar o IMC</h4>
+            <ul>
+                <li><strong>Abaixo de 18,5</strong>: Abaixo do peso</li>
+                <li><strong>18,5 a 24,9</strong>: Peso normal</li>
+                <li><strong>25 a 29,9</strong>: Sobrepeso</li>
+                <li><strong>30 ou mais</strong>: Obesidade</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
-        <p>© 2025 Alimentação Saudável | Design por Saúde+</p>
+        <p>© 2025 Alimentação Saudável | Fortaleza Ceará </p>
     </footer>
 
     <script src="script.js"></script
