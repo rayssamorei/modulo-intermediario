@@ -1,0 +1,211 @@
+/* Estilo global */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #27ae60;
+    padding: 1em 2em;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* Cabeçalho */
+header {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-image: url('img/vidasaudavel4.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
+
+header .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Mantém o fundo escuro para o texto ficar legível */
+    padding: 2em;
+    border-radius: 10px;
+    width: 80%;
+}
+header .titulo {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #ecf0f1; /* Cor mais clara para o título */
+}
+
+header .subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+header .btn-header {
+    padding: 0.8em 2em;
+    background: #27ae60;
+    border: none;
+    border-radius: 30px; /* Bordas mais arredondadas */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .btn-header:hover {
+    background: #1e8449;
+    transform: scale(1.05);
+}
+
+/* Seções */
+section {
+    padding: 5em 1em;
+    text-align: center;
+}
+
+#importancia img, .card img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#importancia .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    text-align: center;
+}
+
+#importancia img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#dicas .cards {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1em;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 1em 0 0.5em;
+    color: #27ae60;
+}
+
+/* Animação */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Rodapé */
+footer {
+    background: #27ae60;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    margin-top: 2em;
+    border-top: 3px solid #1e8449;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+    header {
+        height: auto;
+        padding: 2em 1em;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Comportamento de scroll suave */
+html {
+    scroll-behavior: smooth;
+}

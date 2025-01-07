@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentação Saudável</title>
+    <meta name="description" content="Dicas de alimentação saudável, calculadora de IMC e mais. Transforme sua vida com bons hábitos alimentares!">
+    <meta name="keywords" content="alimentação saudável, saúde, dicas, IMC, vida saudável">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <a href="#topo" class="logo">Saúde+</a>
+        <ul>
+            <li><a href="#importancia">Importância</a></li>
+            <li><a href="#dicas">Dicas</a></li>
+            <li><a href="#imc">Calculadora IMC</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cabeçalho -->
+    <header id="topo">
+        <div class="overlay">
+            <h1 class="titulo">Alimente sua Vida com Saúde</h1>
+            <p class="subtitulo">Transforme sua saúde através de bons hábitos alimentares.</p>
+            <a href="#importancia" class="btn-header">Saiba Mais</a>
+        </div>
+    </header>
+
+    <!-- Seção sobre alimentação saudável -->
+    <section id="importancia" class="fade-in">
+        <h2>Por que ter uma alimentação saudável?</h2>
+        <div class="conteudo">
+            <img src="img/saudavel.png" alt="Comida Saudável">
+            <p>
+                Uma alimentação equilibrada não é apenas uma escolha, é um estilo de vida. 
+                Incorporar alimentos ricos em nutrientes ajuda a prevenir doenças, melhora a qualidade de vida 
+                e proporciona energia para encarar o dia com disposição. Invista na sua saúde hoje!
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção de dicas -->
+    <section id="dicas" class="fade-in">
+        <h2>Dicas Essenciais para uma Alimentação Saudável</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="img/frutas.webp" alt="Frutas">
+                <h3>Adicione Frutas ao Dia</h3>
+                <p>Ricas em vitaminas e fibras, as frutas fortalecem o sistema imunológico e dão energia.</p>
+            </div>
+            <div class="card">
+                <img src="img/legumes.webp" alt="Vegetais">
+                <h3>Encha o Prato de Cores</h3>
+                <p>Vegetais coloridos são aliados contra doenças e promovem uma dieta balanceada.</p>
+            </div>
+            <div class="card">
+                <img src="img/agua.jpg" alt="Hidratação">
+                <h3>Beba Água</h3>
+                <p>Mantenha-se hidratado para melhorar a digestão e o funcionamento do corpo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora de IMC -->
+    <section id="imc" class="fade-in">
+        <h2>Calculadora de IMC</h2>
+        <p>Quer saber se está no peso ideal? Use a calculadora abaixo:</p>
+        <form id="imcForm">
+            <div class="input-group">
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" step="0.01" placeholder="Ex: 1.75" required>
+            </div>
+            <div class="input-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" step="0.1" placeholder="Ex: 70" required>
+            </div>
+            <button type="button" onclick="calcularIMC()">Calcular</button>
+        </form>
+        <p id="resultado"></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Alimentação Saudável | Design por Saúde+</p>
+    </footer>
+
+    <script src="script.js"></script
